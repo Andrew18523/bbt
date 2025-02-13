@@ -51,4 +51,8 @@ select v.vehicle_id, count(t.trip_id) as trip_count
 from Vehicles v left join Trips t on v.vehicle_id=t.vehicle_id
 WHERE t.end_time >= NOW() - INTERVAL 30 DAY
 GROUP BY v.vehicle_id
-Having count(t.trip_id)>10
+Having count(t.trip_id)>10;
+
+select vehicle_id, sum(distance) as total_distance_covered
+from Trips
+Group By vehicle_id;
