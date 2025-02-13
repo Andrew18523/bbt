@@ -10,9 +10,9 @@ Using Git Bash with commend mvnw spring-boot:run to run the code.
 and postman to test the code with below
 ''' java=
 {
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "age": 30
+    "name": "ABC",
+    "email": "ABC@example.com",
+    "age": 25
 }
 '''
 # For Section 1-2
